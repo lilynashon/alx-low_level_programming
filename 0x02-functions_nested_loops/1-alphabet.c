@@ -1,17 +1,20 @@
-#include <stdio.h>
-#include <main.h>
-/**
- * print_alphabet - it rints the  alphabet
- *
- * Return: 0
- */
-void print_alphabet(void)
-{
-	char x = 'a';
+#include "main.h"
 
-	while (x <= 'z')
+
+/**
+* print_alphabet - print all alphabet in lowercase
+*/
+
+
+	void print_alphabet(void)
 	{
-		_putchar(x);
-		x++;
+		char letter;
+
+
+		for (letter = 'a'; letter <= 'z'; letter++)
+			_putchar(letter);
+
+
+		_putchar('\n');
 	}
-	_putchar(\n);
+
